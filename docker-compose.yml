@@ -1,0 +1,42 @@
+version: "2"
+
+services:
+  db:
+    image: mariadb:latest
+    container_name: mariadb
+    restart: always
+    volumes:
+      - ./mysql/initdb/:/docker-entrypoint-initdb.d
+      - ./mysql/data/:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=root
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=root
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    environment:
+      PMA_ARBITRARY: 1
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "8080:80"
+    links:
+      # for mysql container
+      - "db:db"
+  server:
+    build: ./server
+    restart: always
+    links:
+      # for mysql container
+      - "db:db"
+    ports:
+      - "80:80"
+    volumes:
+      - ./etc/nginx/:/etc/nginx/sites-enabled/
+      - ./etc/php-fpm.conf:/etc/php/7.0/fpm/php-fpm.conf
+      - ./etc/supervisord.conf:/etc/supervisor/supervisord.conf
+      - ./sites/:/var/www/html/
+      - ./logs/:/var/log/nginx/
