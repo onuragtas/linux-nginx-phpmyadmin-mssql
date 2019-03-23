@@ -12298,3 +12298,304 @@ PHP message: PHP   2. App\Core\App->run() /var/www/html/icdenetim-tarbil-k8s_dev
 PHP message: PHP   3. call_user_func_array:{/var/www/html/icdenetim-tarbil-k8s_dev/App/Core/App.php:73}() /var/www/html/icdenetim-tarbil-k8s_dev/App/Core/App.php:73
 PHP message: PHP   4. App\Controller\supports->analysis() /var/www/html/icdenetim-
 2019/03/22 15:04:01 [error] 15#15: *244 open() "/var/www/html/icdenetim-tarbil-k8s_dev/assets/images/users/empty.png" failed (2: No such file or directory), client: 172.18.0.1, server: icdenetim.tarbil, request: "GET /assets/images/users/empty.png?1553267041 HTTP/1.1", host: "icdenetim.tarbil", referrer: "http://icdenetim.tarbil/supports/analysis?search=1&destek=6A2AAA67-09EE-46F3-839F-5273287EABFA&sehir=384A3027-9F66-4D9E-9A1A-0A8919EE375E&ilce=ADBD8DD4-B223-43A4-AD5A-31C20777A6CF"
+2019/03/23 19:58:13 [error] 10#10: *34 FastCGI sent in stderr: "PHP message: PHP Warning:  Missing argument 2 for exception_error_handler() in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 94
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Warning:  Missing argument 3 for exception_error_handler() in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 94
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Warning:  Missing argument 4 for exception_error_handler() in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 94
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Notice:  Undefined variable: errstr in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 97
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Notice:  Undefined variable: errfile in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 97
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Notice:  Undefined variable: errline in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 97
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0" while reading response header from upstream, client: 172.19.0.1, server: icdenetim.tarbil, request: "POST /login/userLogin HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "icdenetim.tarbil", referrer: "http://icdenetim.tarbil/login"
+2019/03/23 19:58:13 [error] 10#10: *34 open() "/var/www/html/icdenetim-tarbil-k8s_dev/favicon.ico" failed (2: No such file or directory), client: 172.19.0.1, server: icdenetim.tarbil, request: "GET /favicon.ico HTTP/1.1", host: "icdenetim.tarbil", referrer: "http://icdenetim.tarbil/login/userLogin"
+2019/03/23 19:58:18 [error] 10#10: *34 FastCGI sent in stderr: "PHP message: PHP Warning:  Missing argument 2 for exception_error_handler() in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 94
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Warning:  Missing argument 3 for exception_error_handler() in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 94
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Warning:  Missing argument 4 for exception_error_handler() in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 94
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Notice:  Undefined variable: errstr in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 97
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Notice:  Undefined variable: errfile in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 97
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Notice:  Undefined variable: errline in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 97
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0" while reading response header from upstream, client: 172.19.0.1, server: icdenetim.tarbil, request: "POST /login/userLogin HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "icdenetim.tarbil", referrer: "http://icdenetim.tarbil/login"
+2019/03/23 19:59:01 [error] 10#10: *38 open() "/var/www/html/servisyonetim-tarbil-k8s_dev/favicon.ico" failed (2: No such file or directory), client: 172.19.0.1, server: apigateway.manager, request: "GET /favicon.ico HTTP/1.1", host: "apigateway.manager", referrer: "http://apigateway.manager/login/userLogin"
+2019/03/23 20:01:08 [crit] 10#10: *1 connect() to unix:/var/run/php/php7.2-fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 172.19.0.1, server: , request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "172.19.0.3"
+2019/03/23 20:01:20 [error] 10#10: *7 FastCGI sent in stderr: "PHP message: PHP Warning:  Missing argument 2 for exception_error_handler() in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 94
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Warning:  Missing argument 3 for exception_error_handler() in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 94
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Warning:  Missing argument 4 for exception_error_handler() in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 94
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Notice:  Undefined variable: errstr in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 97
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Notice:  Undefined variable: errfile in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 97
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Notice:  Undefined variable: errline in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 97
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0" while reading response header from upstream, client: 172.19.0.1, server: icdenetim.tarbil, request: "POST /login/userLogin HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "icdenetim.tarbil", referrer: "http://icdenetim.tarbil/login"
+2019/03/23 20:01:48 [error] 10#10: *7 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught PDOException: could not find driver in /var/www/html/icdenetim-tarbil-k8s_dev/App/Utility/Database.php:33
+Stack trace:
+#0 /var/www/html/icdenetim-tarbil-k8s_dev/App/Utility/Database.php(33): PDO->__construct('sqlsrv:Server=1...', 'proda.developer', 'Dev2019!!..')
+#1 /var/www/html/icdenetim-tarbil-k8s_dev/App/Utility/Database.php(90): App\Utility\Database->__construct()
+#2 /var/www/html/icdenetim-tarbil-k8s_dev/App/Utility/Validate.php(22): App\Utility\Database::getInstance()
+#3 /var/www/html/icdenetim-tarbil-k8s_dev/App/Utility/Input.php(20): App\Utility\Validate->__construct(Array, NULL)
+#4 /var/www/html/icdenetim-tarbil-k8s_dev/App/Model/UserLogin.php(74): App\Utility\Input::check(Array, Array)
+#5 /var/www/html/icdenetim-tarbil-k8s_dev/App/Controller/login.php(39): App\Model\UserLogin::login()
+#6 [internal function]: App\Controller\Login->userLogin()
+#7 /var/www/html/icdenetim-tarbil-k8s_dev/App/Core/App.php(73): call_user_func_array(Array, Array)
+#8 /var/www/html" while reading response header from upstream, client: 172.19.0.1, server: icdenetim.tarbil, request: "POST /login/userLogin HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "icdenetim.tarbil", referrer: "http://icdenetim.tarbil/login"
+2019/03/23 20:01:51 [error] 10#10: *7 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught PDOException: could not find driver in /var/www/html/icdenetim-tarbil-k8s_dev/App/Utility/Database.php:33
+Stack trace:
+#0 /var/www/html/icdenetim-tarbil-k8s_dev/App/Utility/Database.php(33): PDO->__construct('sqlsrv:Server=1...', 'proda.developer', 'Dev2019!!..')
+#1 /var/www/html/icdenetim-tarbil-k8s_dev/App/Utility/Database.php(90): App\Utility\Database->__construct()
+#2 /var/www/html/icdenetim-tarbil-k8s_dev/App/Utility/Validate.php(22): App\Utility\Database::getInstance()
+#3 /var/www/html/icdenetim-tarbil-k8s_dev/App/Utility/Input.php(20): App\Utility\Validate->__construct(Array, NULL)
+#4 /var/www/html/icdenetim-tarbil-k8s_dev/App/Model/UserLogin.php(74): App\Utility\Input::check(Array, Array)
+#5 /var/www/html/icdenetim-tarbil-k8s_dev/App/Controller/login.php(39): App\Model\UserLogin::login()
+#6 [internal function]: App\Controller\Login->userLogin()
+#7 /var/www/html/icdenetim-tarbil-k8s_dev/App/Core/App.php(73): call_user_func_array(Array, Array)
+#8 /var/www/html" while reading response header from upstream, client: 172.19.0.1, server: icdenetim.tarbil, request: "POST /login/userLogin HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "icdenetim.tarbil", referrer: "http://icdenetim.tarbil/login"
+2019/03/23 20:14:27 [error] 13#13: *1 FastCGI sent in stderr: "PHP message: PHP Warning:  Missing argument 2 for exception_error_handler() in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 94
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Warning:  Missing argument 3 for exception_error_handler() in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 94
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Warning:  Missing argument 4 for exception_error_handler() in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 94
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Notice:  Undefined variable: errstr in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 97
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Notice:  Undefined variable: errfile in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 97
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Notice:  Undefined variable: errline in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 97
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0" while reading response header from upstream, client: 172.18.0.1, server: icdenetim.tarbil, request: "POST /login/userLogin HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "icdenetim.tarbil", referrer: "http://icdenetim.tarbil/login"
+2019/03/23 20:43:30 [error] 10#10: *1 FastCGI sent in stderr: "PHP message: PHP Warning:  Missing argument 2 for exception_error_handler() in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 94
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Warning:  Missing argument 3 for exception_error_handler() in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 94
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Warning:  Missing argument 4 for exception_error_handler() in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 94
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Notice:  Undefined variable: errstr in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 97
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Notice:  Undefined variable: errfile in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 97
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Notice:  Undefined variable: errline in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 97
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0" while reading response header from upstream, client: 172.18.0.1, server: icdenetim.tarbil, request: "POST /login/userLogin HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "icdenetim.tarbil", referrer: "http://icdenetim.tarbil/login"
+2019/03/23 21:02:07 [error] 13#13: *1 FastCGI sent in stderr: "PHP message: PHP Warning:  Missing argument 2 for exception_error_handler() in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 94
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Warning:  Missing argument 3 for exception_error_handler() in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 94
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Warning:  Missing argument 4 for exception_error_handler() in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 94
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Notice:  Undefined variable: errstr in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 97
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Notice:  Undefined variable: errfile in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 97
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Notice:  Undefined variable: errline in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 97
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0" while reading response header from upstream, client: 172.19.0.1, server: icdenetim.tarbil, request: "POST /login/userLogin HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "icdenetim.tarbil", referrer: "http://icdenetim.tarbil/login"
+2019/03/23 21:02:08 [error] 13#13: *1 open() "/var/www/html/icdenetim-tarbil-k8s_dev/favicon.ico" failed (2: No such file or directory), client: 172.19.0.1, server: icdenetim.tarbil, request: "GET /favicon.ico HTTP/1.1", host: "icdenetim.tarbil", referrer: "http://icdenetim.tarbil/login/userLogin"
+2019/03/23 21:02:09 [error] 13#13: *4 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: csrf_token in /var/www/html/servisyonetim-tarbil-k8s_dev/App/Utility/Input.php on line 16
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/html/servisyonetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP   2. App\Core\App->run() /var/www/html/servisyonetim-tarbil-k8s_dev/index.php:126
+PHP message: PHP   3. call_user_func_array:{/var/www/html/servisyonetim-tarbil-k8s_dev/App/Core/App.php:73}() /var/www/html/servisyonetim-tarbil-k8s_dev/App/Core/App.php:73
+PHP message: PHP   4. App\Controller\Login->userLogin() /var/www/html/servisyonetim-tarbil-k8s_dev/App/Core/App.php:73
+PHP message: PHP   5. App\Model\UserLogin::login() /var/www/html/servisyonetim-tarbil-k8s_dev/App/Controller/Login.php:43
+PHP message: PHP   6. App\Utility\Input::check() /var/www/html/servisyonetim-tarbil-k8s_dev/App/Model/UserLogin.php:48" while reading response header from upstream, client: 172.19.0.1, server: apigateway.manager, request: "GET /login/userLogin HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "apigateway.manager"
+2019/03/23 21:02:09 [error] 13#13: *4 open() "/var/www/html/servisyonetim-tarbil-k8s_dev/favicon.ico" failed (2: No such file or directory), client: 172.19.0.1, server: apigateway.manager, request: "GET /favicon.ico HTTP/1.1", host: "apigateway.manager", referrer: "http://apigateway.manager/login/userLogin"
+2019/03/23 21:02:10 [error] 13#13: *4 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: csrf_token in /var/www/html/servisyonetim-tarbil-k8s_dev/App/Utility/Input.php on line 16
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/html/servisyonetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP   2. App\Core\App->run() /var/www/html/servisyonetim-tarbil-k8s_dev/index.php:126
+PHP message: PHP   3. call_user_func_array:{/var/www/html/servisyonetim-tarbil-k8s_dev/App/Core/App.php:73}() /var/www/html/servisyonetim-tarbil-k8s_dev/App/Core/App.php:73
+PHP message: PHP   4. App\Controller\Login->userLogin() /var/www/html/servisyonetim-tarbil-k8s_dev/App/Core/App.php:73
+PHP message: PHP   5. App\Model\UserLogin::login() /var/www/html/servisyonetim-tarbil-k8s_dev/App/Controller/Login.php:43
+PHP message: PHP   6. App\Utility\Input::check() /var/www/html/servisyonetim-tarbil-k8s_dev/App/Model/UserLogin.php:48" while reading response header from upstream, client: 172.19.0.1, server: apigateway.manager, request: "GET /login/userLogin HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "apigateway.manager"
+2019/03/23 21:02:10 [error] 13#13: *4 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: csrf_token in /var/www/html/servisyonetim-tarbil-k8s_dev/App/Utility/Input.php on line 16
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/html/servisyonetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP   2. App\Core\App->run() /var/www/html/servisyonetim-tarbil-k8s_dev/index.php:126
+PHP message: PHP   3. call_user_func_array:{/var/www/html/servisyonetim-tarbil-k8s_dev/App/Core/App.php:73}() /var/www/html/servisyonetim-tarbil-k8s_dev/App/Core/App.php:73
+PHP message: PHP   4. App\Controller\Login->userLogin() /var/www/html/servisyonetim-tarbil-k8s_dev/App/Core/App.php:73
+PHP message: PHP   5. App\Model\UserLogin::login() /var/www/html/servisyonetim-tarbil-k8s_dev/App/Controller/Login.php:43
+PHP message: PHP   6. App\Utility\Input::check() /var/www/html/servisyonetim-tarbil-k8s_dev/App/Model/UserLogin.php:48" while reading response header from upstream, client: 172.19.0.1, server: apigateway.manager, request: "GET /login/userLogin HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "apigateway.manager"
+2019/03/23 21:02:10 [error] 13#13: *4 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: csrf_token in /var/www/html/servisyonetim-tarbil-k8s_dev/App/Utility/Input.php on line 16
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/html/servisyonetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP   2. App\Core\App->run() /var/www/html/servisyonetim-tarbil-k8s_dev/index.php:126
+PHP message: PHP   3. call_user_func_array:{/var/www/html/servisyonetim-tarbil-k8s_dev/App/Core/App.php:73}() /var/www/html/servisyonetim-tarbil-k8s_dev/App/Core/App.php:73
+PHP message: PHP   4. App\Controller\Login->userLogin() /var/www/html/servisyonetim-tarbil-k8s_dev/App/Core/App.php:73
+PHP message: PHP   5. App\Model\UserLogin::login() /var/www/html/servisyonetim-tarbil-k8s_dev/App/Controller/Login.php:43
+PHP message: PHP   6. App\Utility\Input::check() /var/www/html/servisyonetim-tarbil-k8s_dev/App/Model/UserLogin.php:48" while reading response header from upstream, client: 172.19.0.1, server: apigateway.manager, request: "GET /login/userLogin HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "apigateway.manager"
+2019/03/23 21:02:11 [error] 13#13: *4 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: csrf_token in /var/www/html/servisyonetim-tarbil-k8s_dev/App/Utility/Input.php on line 16
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/html/servisyonetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP   2. App\Core\App->run() /var/www/html/servisyonetim-tarbil-k8s_dev/index.php:126
+PHP message: PHP   3. call_user_func_array:{/var/www/html/servisyonetim-tarbil-k8s_dev/App/Core/App.php:73}() /var/www/html/servisyonetim-tarbil-k8s_dev/App/Core/App.php:73
+PHP message: PHP   4. App\Controller\Login->userLogin() /var/www/html/servisyonetim-tarbil-k8s_dev/App/Core/App.php:73
+PHP message: PHP   5. App\Model\UserLogin::login() /var/www/html/servisyonetim-tarbil-k8s_dev/App/Controller/Login.php:43
+PHP message: PHP   6. App\Utility\Input::check() /var/www/html/servisyonetim-tarbil-k8s_dev/App/Model/UserLogin.php:48" while reading response header from upstream, client: 172.19.0.1, server: apigateway.manager, request: "GET /login/userLogin HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "apigateway.manager"
+2019/03/23 21:02:11 [error] 13#13: *4 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: csrf_token in /var/www/html/servisyonetim-tarbil-k8s_dev/App/Utility/Input.php on line 16
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/html/servisyonetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP   2. App\Core\App->run() /var/www/html/servisyonetim-tarbil-k8s_dev/index.php:126
+PHP message: PHP   3. call_user_func_array:{/var/www/html/servisyonetim-tarbil-k8s_dev/App/Core/App.php:73}() /var/www/html/servisyonetim-tarbil-k8s_dev/App/Core/App.php:73
+PHP message: PHP   4. App\Controller\Login->userLogin() /var/www/html/servisyonetim-tarbil-k8s_dev/App/Core/App.php:73
+PHP message: PHP   5. App\Model\UserLogin::login() /var/www/html/servisyonetim-tarbil-k8s_dev/App/Controller/Login.php:43
+PHP message: PHP   6. App\Utility\Input::check() /var/www/html/servisyonetim-tarbil-k8s_dev/App/Model/UserLogin.php:48" while reading response header from upstream, client: 172.19.0.1, server: apigateway.manager, request: "GET /login/userLogin HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "apigateway.manager"
+2019/03/23 21:02:14 [error] 13#13: *4 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: csrf_token in /var/www/html/servisyonetim-tarbil-k8s_dev/App/Utility/Input.php on line 16
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/html/servisyonetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP   2. App\Core\App->run() /var/www/html/servisyonetim-tarbil-k8s_dev/index.php:126
+PHP message: PHP   3. call_user_func_array:{/var/www/html/servisyonetim-tarbil-k8s_dev/App/Core/App.php:73}() /var/www/html/servisyonetim-tarbil-k8s_dev/App/Core/App.php:73
+PHP message: PHP   4. App\Controller\Login->userLogin() /var/www/html/servisyonetim-tarbil-k8s_dev/App/Core/App.php:73
+PHP message: PHP   5. App\Model\UserLogin::login() /var/www/html/servisyonetim-tarbil-k8s_dev/App/Controller/Login.php:43
+PHP message: PHP   6. App\Utility\Input::check() /var/www/html/servisyonetim-tarbil-k8s_dev/App/Model/UserLogin.php:48" while reading response header from upstream, client: 172.19.0.1, server: apigateway.manager, request: "GET /login/userLogin HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "apigateway.manager"
+2019/03/23 21:02:16 [error] 13#13: *1 FastCGI sent in stderr: "PHP message: PHP Warning:  Missing argument 2 for exception_error_handler() in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 94
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Warning:  Missing argument 3 for exception_error_handler() in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 94
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Warning:  Missing argument 4 for exception_error_handler() in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 94
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Notice:  Undefined variable: errstr in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 97
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Notice:  Undefined variable: errfile in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 97
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Notice:  Undefined variable: errline in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 97
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0" while reading response header from upstream, client: 172.19.0.1, server: icdenetim.tarbil, request: "POST /login/userLogin HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "icdenetim.tarbil", referrer: "http://icdenetim.tarbil/login"
+2019/03/23 21:05:43 [error] 10#10: *1 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: csrf_token in /var/www/html/servisyonetim-tarbil-k8s_dev/App/Utility/Input.php on line 16
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/html/servisyonetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP   2. App\Core\App->run() /var/www/html/servisyonetim-tarbil-k8s_dev/index.php:126
+PHP message: PHP   3. call_user_func_array:{/var/www/html/servisyonetim-tarbil-k8s_dev/App/Core/App.php:73}() /var/www/html/servisyonetim-tarbil-k8s_dev/App/Core/App.php:73
+PHP message: PHP   4. App\Controller\Login->userLogin() /var/www/html/servisyonetim-tarbil-k8s_dev/App/Core/App.php:73
+PHP message: PHP   5. App\Model\UserLogin::login() /var/www/html/servisyonetim-tarbil-k8s_dev/App/Controller/Login.php:43
+PHP message: PHP   6. App\Utility\Input::check() /var/www/html/servisyonetim-tarbil-k8s_dev/App/Model/UserLogin.php:48" while reading response header from upstream, client: 172.19.0.1, server: apigateway.manager, request: "GET /login/userLogin HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "apigateway.manager"
+2019/03/23 21:05:45 [error] 10#10: *4 FastCGI sent in stderr: "PHP message: PHP Warning:  Missing argument 2 for exception_error_handler() in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 94
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Warning:  Missing argument 3 for exception_error_handler() in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 94
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Warning:  Missing argument 4 for exception_error_handler() in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 94
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Notice:  Undefined variable: errstr in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 97
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Notice:  Undefined variable: errfile in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 97
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Notice:  Undefined variable: errline in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 97
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0" while reading response header from upstream, client: 172.19.0.1, server: icdenetim.tarbil, request: "POST /login/userLogin HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "icdenetim.tarbil", referrer: "http://icdenetim.tarbil/login"
+2019/03/23 21:05:58 [error] 10#10: *4 FastCGI sent in stderr: "PHP message: PHP Warning:  Missing argument 2 for exception_error_handler() in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 94
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Warning:  Missing argument 3 for exception_error_handler() in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 94
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Warning:  Missing argument 4 for exception_error_handler() in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 94
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Notice:  Undefined variable: errstr in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 97
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Notice:  Undefined variable: errfile in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 97
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Notice:  Undefined variable: errline in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 97
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0" while reading response header from upstream, client: 172.19.0.1, server: icdenetim.tarbil, request: "POST /login/userLogin HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "icdenetim.tarbil", referrer: "http://icdenetim.tarbil/login"
+2019/03/23 21:13:23 [error] 11#11: *1 FastCGI sent in stderr: "PHP message: PHP Warning:  Missing argument 2 for exception_error_handler() in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 94
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Warning:  Missing argument 3 for exception_error_handler() in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 94
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Warning:  Missing argument 4 for exception_error_handler() in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 94
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Notice:  Undefined variable: errstr in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 97
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Notice:  Undefined variable: errfile in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 97
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Notice:  Undefined variable: errline in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 97
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0" while reading response header from upstream, client: 172.19.0.1, server: icdenetim.tarbil, request: "POST /login/userLogin HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "icdenetim.tarbil", referrer: "http://icdenetim.tarbil/login"
+2019/03/23 21:13:36 [error] 11#11: *6 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: csrf_token in /var/www/html/servisyonetim-tarbil-k8s_dev/App/Utility/Input.php on line 16
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/html/servisyonetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP   2. App\Core\App->run() /var/www/html/servisyonetim-tarbil-k8s_dev/index.php:126
+PHP message: PHP   3. call_user_func_array:{/var/www/html/servisyonetim-tarbil-k8s_dev/App/Core/App.php:73}() /var/www/html/servisyonetim-tarbil-k8s_dev/App/Core/App.php:73
+PHP message: PHP   4. App\Controller\Login->userLogin() /var/www/html/servisyonetim-tarbil-k8s_dev/App/Core/App.php:73
+PHP message: PHP   5. App\Model\UserLogin::login() /var/www/html/servisyonetim-tarbil-k8s_dev/App/Controller/Login.php:43
+PHP message: PHP   6. App\Utility\Input::check() /var/www/html/servisyonetim-tarbil-k8s_dev/App/Model/UserLogin.php:48" while reading response header from upstream, client: 172.19.0.1, server: apigateway.manager, request: "GET /login/userLogin HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "apigateway.manager"
+2019/03/23 21:13:42 [error] 11#11: *1 FastCGI sent in stderr: "PHP message: PHP Warning:  Missing argument 2 for exception_error_handler() in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 94
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Warning:  Missing argument 3 for exception_error_handler() in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 94
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Warning:  Missing argument 4 for exception_error_handler() in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 94
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Notice:  Undefined variable: errstr in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 97
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Notice:  Undefined variable: errfile in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 97
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0
+PHP message: PHP Notice:  Undefined variable: errline in /var/www/html/icdenetim-tarbil-k8s_dev/index.php on line 97
+PHP message: PHP Stack trace:
+PHP message: PHP   1. exception_error_handler() /var/www/html/icdenetim-tarbil-k8s_dev/index.php:0" while reading response header from upstream, client: 172.19.0.1, server: icdenetim.tarbil, request: "POST /login/userLogin HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "icdenetim.tarbil", referrer: "http://icdenetim.tarbil/login"
+2019/03/23 21:13:54 [error] 11#11: *15 open() "/var/www/html/icdenetim-tarbil-k8s_dev/assets/images/users/empty.png" failed (2: No such file or directory), client: 172.19.0.1, server: icdenetim.tarbil, request: "GET /assets/images/users/empty.png?1553375633 HTTP/1.1", host: "icdenetim.tarbil", referrer: "http://icdenetim.tarbil/"
+2019/03/23 21:14:01 [error] 12#12: *19 open() "/var/www/html/servisyonetim-tarbil-k8s_dev/assets/lib/images/sort_both.png" failed (2: No such file or directory), client: 172.19.0.1, server: apigateway.manager, request: "GET /assets/lib/images/sort_both.png HTTP/1.1", host: "apigateway.manager", referrer: "http://apigateway.manager/assets/lib/datatables/jquery.dataTables.css"
+2019/03/23 21:14:01 [error] 12#12: *19 open() "/var/www/html/servisyonetim-tarbil-k8s_dev/assets/lib/images/sort_asc.png" failed (2: No such file or directory), client: 172.19.0.1, server: apigateway.manager, request: "GET /assets/lib/images/sort_asc.png HTTP/1.1", host: "apigateway.manager", referrer: "http://apigateway.manager/assets/lib/datatables/jquery.dataTables.css"
+2019/03/23 21:14:27 [error] 12#12: *19 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.19.0.1, server: apigateway.manager, request: "GET /Apigatewaymanager/main HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "apigateway.manager", referrer: "http://apigateway.manager/"

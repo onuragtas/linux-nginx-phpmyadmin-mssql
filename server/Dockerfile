@@ -33,8 +33,9 @@ RUN sed -i "s/^\(memory_limit\(\s*\)\?=\).*/\1 256M/" /etc/php/7.0/fpm/php.ini
 
 RUN echo "xdebug.remote_enable=1" >> /etc/php/7.0/cli/php.ini
 RUN pecl install sqlsrv-5.2.0 pdo_sqlsrv-5.2.0 swoole
+RUN echo -e "; priority=20\nextension=sqlsrv.so" > /etc/php/7.0/mods-available/sqlsrv.ini
 RUN echo -e "; priority=20\nextension=pdo_sqlsrv.so" > /etc/php/7.0/mods-available/pdo_sqlsrv.ini
-RUN echo -e "; priority=20\nextension=swoole.so" > /etc/php/7.0/mods-available/pdo_sqlsrv.ini
+RUN echo -e "; priority=20\nextension=swoole.so" > /etc/php/7.0/mods-available/swoole.ini
 RUN phpenmod -v 7.0 -s ALL mbstring intl pdo_mysql redis memcached gd curl xml xsl mongodb xdebug sqlsrv pdo_sqlsrv swoole
 
 
