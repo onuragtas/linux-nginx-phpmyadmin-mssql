@@ -1,1 +1,4 @@
 sites/*
+etc/nginx/*
+!etc/nginx/default*
+mysql/*
