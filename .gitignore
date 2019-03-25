@@ -2,3 +2,4 @@ sites/*
 etc/nginx/*
 !etc/nginx/default*
 mysql/*
+logs/*
