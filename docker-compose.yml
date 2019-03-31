@@ -1,5 +1,15 @@
 version: '2'
 services:
+  redis:
+    image: 'redis'
+    restart: always
+    networks:
+      net:
+        ipv4_address: 172.28.1.4
+    environment:
+      - REDIS_PASSWORD = redis
+    ports:
+      - '6379:6379'
   db:
     image: 'mariadb:latest'
     container_name: mariadb
