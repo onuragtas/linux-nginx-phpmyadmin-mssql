@@ -2,6 +2,9 @@ sites/*
 etc/nginx/*
 !etc/nginx/default*
 mysql/*
-logs/
+postgres/*
 logs/*
 Ssl/*
+mongo/*
+pgadmin/*
+postgres/*
