@@ -8,3 +8,5 @@ Ssl/*
 mongo/*
 pgadmin/*
 postgres/*
+logs/access.log
+logs/error.log
