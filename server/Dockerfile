@@ -33,8 +33,9 @@ RUN sed -i "s/^\(memory_limit\(\s*\)\?=\).*/\1 256M/" /etc/php/7.0/fpm/php.ini
 RUN sed -i "s/^\(short_open_tag\(\s*\)\?=\).*/\1 On/" /etc/php/7.0/fpm/php.ini
 RUN sed -i "s/^\(short_open_tag\(\s*\)\?=\).*/\1 On/" /etc/php/7.0/fpm/php.ini
 
-RUN echo "xdebug.remote_enable=1" >> /etc/php/7.0/cli/php.ini
 RUN pecl install sqlsrv-5.2.0 pdo_sqlsrv-5.2.0 swoole
+RUN echo "xdebug.remote_enable=1" >> /etc/php/7.0/fpm/php.ini
+RUN echo "zend_extension=xdebug.so\nxdebug.default_enable=1\nxdebug.remote_enable=1\nxdebug.remote_handler=dbgp\nxdebug.remote_port=9001\nxdebug.remote_autostart=1\nxdebug.remote_connect_back=1\nxdebug.idekey='PHPSTORM'" >> /etc/php/7.0/mods-available/xdebug.ini
 RUN echo -e "; priority=20\nextension=sqlsrv.so" > /etc/php/7.0/mods-available/sqlsrv.ini
 RUN echo -e "; priority=20\nextension=pdo_sqlsrv.so" > /etc/php/7.0/mods-available/pdo_sqlsrv.ini
 RUN echo -e "; priority=20\nextension=swoole.so" > /etc/php/7.0/mods-available/swoole.ini
