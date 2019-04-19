@@ -115,13 +115,15 @@ services:
       - 'db:db'
     ports:
       - '80:80'
+      - "443:443"
     volumes:
       - './etc/nginx/:/etc/nginx/sites-enabled/'
       - './etc/php-fpm.conf:/etc/php/7.0/fpm/php-fpm.conf'
       - './etc/supervisord.conf:/etc/supervisor/supervisord.conf'
       - './sites/:/var/www/html/'
       - './logs/:/var/log/nginx/'
-      - './Ssl/:/root/Ssl/'
+      - './ssl/:/root/ssl/'
+      - './tmp/:/tmp/'
 networks:
     net:
       ipam:
