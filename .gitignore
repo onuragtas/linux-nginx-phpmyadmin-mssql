@@ -4,9 +4,16 @@ etc/nginx/*
 mysql/*
 postgres/*
 logs/*
-Ssl/*
+ssl/*
 mongo/*
 pgadmin/*
 postgres/*
 logs/access.log
 logs/error.log
+tmp/*
+.idea
+*.jks
+*.p12
+*.key
+*.mobileprovision
+*.log
