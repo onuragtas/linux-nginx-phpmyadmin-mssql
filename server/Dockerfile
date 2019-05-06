@@ -25,7 +25,7 @@ RUN curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add - \
     #&& source ~/.bashrc \
     && sudo apt-get install -y unixodbc-dev unixodbc libssl-dev
 
-RUN apt-get install -y php7.0-fpm php7.0-cli php7.0-mbstring  php7.0-intl php7.0-zip php7.0-mysql php7.0-redis php7.0-memcache php7.0-gd php7.0-curl php7.0-xsl php7.0-mongodb php7.0-xdebug php7.0-dev php-pear
+RUN apt-get install -y php7.0-fpm php7.0-cli php7.0-mbstring  php7.0-intl php7.0-zip php7.0-mysql php7.0-redis php7.0-memcache php7.0-gd php7.0-curl php7.0-xsl php7.0-mongodb php7.0-xdebug php7.0-dev php-pear php7.0-pgsql
 RUN sed -i "s/^;\(date\.timezone\(\s*\)\?=\).*/\1 Europe\/Amsterdam/" /etc/php/7.0/cli/php.ini
 RUN sed -i "s/^;\(date\.timezone\(\s*\)\?=\).*/\1 Europe\/Amsterdam/" /etc/php/7.0/fpm/php.ini
 RUN sed -i "s/^\(memory_limit\(\s*\)\?=\).*/\1 4G/" /etc/php/7.0/cli/php.ini
