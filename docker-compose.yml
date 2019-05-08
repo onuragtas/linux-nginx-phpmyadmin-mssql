@@ -1,5 +1,15 @@
 version: '3'
 services:
+  redisclient:
+    image: rdbtools/rdbtools
+    container_name: redisclient
+    restart: always
+    ports:
+    - '6380:8001'
+    networks:
+      net:
+        ipv4_address: 172.28.1.9
+
   mongodb:
     image: mongo:latest
     container_name: mongodb
@@ -115,6 +125,7 @@ services:
       - 'db:db'
     ports:
       - '80:80'
+      - '443:443'
     volumes:
       - './etc/nginx/:/etc/nginx/sites-enabled/'
       - './etc/php-fpm.conf:/etc/php/7.0/fpm/php-fpm.conf'
