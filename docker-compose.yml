@@ -1,6 +1,20 @@
 version: '3'
 services:
+  adminer:
+    image: adminer
+    restart: always
+    container_name: adminer
+    ports:
+      - "3000:8080"
+    networks:
+      net:
+        ipv4_address: 172.28.1.12
+    logging:
+      options:
+        max-size: 50m
+
   elasticsearch:
+    container_name: elasticsearch
     image: 'bitnami/elasticsearch:7'
     ports:
       - '9200:9200'
@@ -153,7 +167,7 @@ services:
       - '443:443'
     volumes:
       - './etc/nginx/:/etc/nginx/sites-enabled/'
-      - './etc/php-fpm.conf:/etc/php/7.0/fpm/php-fpm.conf'
+      - './etc/php-fpm.conf:/etc/php/7.2/fpm/php-fpm.conf'
       - './etc/supervisord.conf:/etc/supervisor/supervisord.conf'
       - './sites/:/var/www/html/'
       - './logs/:/var/log/nginx/'
